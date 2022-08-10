@@ -1,10 +1,6 @@
 package com.example.test1.service;
 
-//import com.example.test1.model.Bitcoin;
 
-//import com.example.test1.model.BitcoinData;
-import lombok.AllArgsConstructor;
-//import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -23,6 +19,7 @@ public class DigitalCurrencyService {
         String apiURL = "https://api.coincap.io/v2/assets/" + name;
         RestTemplate restTemplate = new RestTemplate();
         Data result = restTemplate.getForObject(apiURL, Data.class);
+
         return restTemplate.getForObject(apiURL, Data.class).getData().getPriceUsd();
     }
 }

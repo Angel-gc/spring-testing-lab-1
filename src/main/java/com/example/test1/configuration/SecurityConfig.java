@@ -23,10 +23,18 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         http.authorizeRequests()
-                .antMatchers("/bitcoin", "/tether")
+                .antMatchers("/bitcoin")
                 .authenticated()
                 .and()
-                .httpBasic();
+                .formLogin()
+                .and()
+                .logout();
+
+        http.authorizeRequests()
+                .anyRequest()
+                .authenticated()
+                .and()
+                .oauth2Login();
 
         return http.build();
     }
