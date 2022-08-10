@@ -21,6 +21,8 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+//        http.authorizeRequests()
+//                        .anyRequest().permitAll();
 
         http.authorizeRequests()
                 .antMatchers("/bitcoin")
@@ -30,11 +32,11 @@ public class SecurityConfig {
                 .and()
                 .logout();
 
-        http.authorizeRequests()
-                .anyRequest()
-                .authenticated()
-                .and()
-                .oauth2Login();
+//        http.authorizeRequests()
+//                .anyRequest()
+//                .authenticated()
+//                .and()
+//                .oauth2Login();
 
         return http.build();
     }
@@ -44,7 +46,7 @@ public class SecurityConfig {
         InMemoryUserDetailsManager userDetailsManager = new InMemoryUserDetailsManager();
 
         String username = "Angel";
-        String password = "asldkfh";
+        String password = "123";
         UserDetails thisUser = User.withUsername(username).password(passwordEncoder().encode(password))
                 .authorities("admin")
                 .build();

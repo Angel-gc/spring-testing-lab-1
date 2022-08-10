@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 public class HelloController {
 
-//    @Autowired
-    private final JokeService jokeService;
+    @Autowired
+    private JokeService jokeService;
 
-    public HelloController(JokeService jokeService) {
-        this.jokeService = jokeService;
-    }
+//    public HelloController(JokeService jokeService) {
+//        this.jokeService = jokeService;
+//    }
 
     @GetMapping("/hello")
     public String hello(@RequestParam(name = "targetName", defaultValue = "Stephanie") String name) {
