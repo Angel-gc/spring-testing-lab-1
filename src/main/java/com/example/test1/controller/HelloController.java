@@ -23,5 +23,9 @@ public class HelloController {
         greeting += "Dad joke of the moment: " + jokeService.getDadJoke();
         return greeting;
     }
+    @GetMapping("/status")
+    public String status() {
+        return "Congratulations - you must be an admin since you can see the application's status information";
+    }
 
 }
