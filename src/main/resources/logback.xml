@@ -9,16 +9,16 @@
         </layout>
     </appender>
     <appender name="File-Appender" class="ch.qos.logback.core.FileAppender">
-        <file>logbackBitcoinQueries.log</file>
+        <file>flatiron-spring-trace.log</file>
         <encoder>
-            <pattern>%date{dd-MM-yyyy HH:mm} [%6level] --- [%thread] %-40.40logger{39} : %msg%n</pattern>
+            <pattern>%.-3level [THREAD:%thread] %logger %n \t\t %msg%n</pattern>
         </encoder>
     </appender>
     <root level="INFO">
         <appender-ref ref="Console-Appender" />
-        <appender-ref ref="File-Appender" />
+<!--        <appender-ref ref="File-Appender" />-->
     </root>
-    <logger name="com.flatiron.spring" level="TRACE">
+    <logger name="com.example.test1" level="TRACE">
         <appender-ref ref="Console-Appender" />
         <appender-ref ref="File-Appender" />
     </logger>

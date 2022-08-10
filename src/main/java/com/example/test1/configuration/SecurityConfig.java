@@ -32,11 +32,11 @@ public class SecurityConfig {
                 .and()
                 .logout();
 
-        http.authorizeRequests()
-                .anyRequest()
-                .authenticated()
-                .and()
-                .oauth2Login();
+//        http.authorizeRequests()
+//                .anyRequest()
+//                .authenticated()
+//                .and()
+//                .oauth2Login();
 
         return http.build();
     }

@@ -1,0 +1,16 @@
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Starting Test1Application using Java 17.0.4 on DESKTOP-8MHJRII with PID 10980 (C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1\target\classes started by Calder in C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1)
+DEB [THREAD:main] com.example.test1.Test1Application 
+ 		 Running with Spring Boot v2.7.2, Spring v5.3.22
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 No active profile set, falling back to 1 default profile: "default"
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Started Test1Application in 2.035 seconds (JVM running for 2.457)
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Starting Test1Application using Java 17.0.4 on DESKTOP-8MHJRII with PID 11992 (C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1\target\classes started by Calder in C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1)
+DEB [THREAD:main] com.example.test1.Test1Application 
+ 		 Running with Spring Boot v2.7.2, Spring v5.3.22
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 No active profile set, falling back to 1 default profile: "default"
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Started Test1Application in 2.123 seconds (JVM running for 2.709)
