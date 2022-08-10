@@ -21,7 +21,7 @@ public class DigitalCurrencyService {
         String apiURL = "https://api.coincap.io/v2/assets/" + name;
         RestTemplate restTemplate = new RestTemplate();
         Data result = restTemplate.getForObject(apiURL, Data.class);
-        return restTemplate.getForObject(apiURL, Data.class).getData().getPriceUsd();
+        return result.getData().getPriceUsd();
     }
 }
 @Getter
