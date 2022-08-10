@@ -27,7 +27,7 @@ class DigitalCurrencyControllerIntegrationTest {
     @MockBean
     private DigitalCurrencyService digitalCurrencyService;
 
-    @WithMockUser(authorities = "admin")
+    @WithMockUser()
     @Test
     void btc() throws Exception {
         mockMvc.perform(get("/bitcoin"))
@@ -35,7 +35,7 @@ class DigitalCurrencyControllerIntegrationTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string(equalTo("Current price of bitcoin is: " + digitalCurrencyService.getCoinPrice("bitcoin"))));
     }
-//    @WithMockUser(authorities = "admin")
+    @WithMockUser()
     @Test
     void tether() throws Exception {
         String coin = "tether";

@@ -13,55 +13,41 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig {
 
-    @Override
-    protected void configure(HttpSecurity http) throws Exception {
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+
         http.authorizeRequests()
-                .anyRequest().permitAll();
+                .antMatchers("/bitcoin", "/tether")
+                .authenticated()
+                .and()
+                .httpBasic();
 
-//        http.authorizeRequests()
-//                .antMatchers("/bitcoin").permitAll()
-//                .anyRequest().authenticated()
-//                .and()
-//                .httpBasic();
-//        http.authorizeRequests()
-//                .antMatchers("/tether").permitAll()
-//                .anyRequest().authenticated()
-//                .and()
-//                .httpBasic();
-////
-//        http.authorizeRequests()
-//                .antMatchers("/status")
-//                .hasAuthority("admin")
-//                .antMatchers("/hello")
-//                .hasAuthority("admin");
-//
-//        http.authorizeRequests()
-//                .anyRequest()
-//                .authenticated()
-//                .and()
-//                .formLogin();
+        return http.build();
+    }
+
+    @Bean
+    public UserDetailsService userDetailsService() {
+        InMemoryUserDetailsManager userDetailsManager = new InMemoryUserDetailsManager();
+
+        String username = "Angel";
+        String password = "asldkfh";
+        UserDetails thisUser = User.withUsername(username).password(passwordEncoder().encode(password))
+                .authorities("admin")
+                .build();
+
+        userDetailsManager.createUser(thisUser);
+
+        return userDetailsManager;
+    }
+
+    @Bean
+    PasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 }
-//    @Bean
-//    public UserDetailsService userDetailsService() {
-//        InMemoryUserDetailsManager userDetailService = new InMemoryUserDetailsManager();
-//
-//        UserDetails user1 = User.withUsername("mary")
-//                .password(passwordEncoder().encode("test"))
-//                .authorities("read")
-//                .build();
-//        userDetailService.createUser(user1);
-//
-//        return userDetailService;
-//    }
-//
-//    @Bean
-//    PasswordEncoder passwordEncoder() {
-//        return new BCryptPasswordEncoder();
-//    }
-//}
