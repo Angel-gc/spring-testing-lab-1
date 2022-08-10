@@ -14,3 +14,53 @@ INF [THREAD:main] com.example.test1.Test1Application
  		 No active profile set, falling back to 1 default profile: "default"
 INF [THREAD:main] com.example.test1.Test1Application 
  		 Started Test1Application in 2.123 seconds (JVM running for 2.709)
+INF [THREAD:http-nio-8080-exec-5] com.example.test1.controller.DigitalCurrencyController 
+ 		 Current price of bitcoin is: 23913.0641981796684563
+INF [THREAD:http-nio-8080-exec-7] com.example.test1.controller.DigitalCurrencyController 
+ 		 Current price of bitcoin is: 23909.7698737120719376
+INF [THREAD:http-nio-8080-exec-9] com.example.test1.controller.DigitalCurrencyController 
+ 		 Current price of bitcoin is: 23909.7698737120719376
+INF [THREAD:http-nio-8080-exec-1] com.example.test1.controller.DigitalCurrencyController 
+ 		 Current price of bitcoin is: 23909.7698737120719376
+INF [THREAD:http-nio-8080-exec-3] com.example.test1.controller.DigitalCurrencyController 
+ 		 Current price of bitcoin is: 23909.7698737120719376
+INF [THREAD:http-nio-8080-exec-5] com.example.test1.controller.DigitalCurrencyController 
+ 		 Current price of bitcoin is: 23908.4873470478373518
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Starting Test1Application using Java 17.0.4 on DESKTOP-8MHJRII with PID 12856 (C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1\target\classes started by Calder in C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1)
+DEB [THREAD:main] com.example.test1.Test1Application 
+ 		 Running with Spring Boot v2.7.2, Spring v5.3.22
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 No active profile set, falling back to 1 default profile: "default"
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Started Test1Application in 2.091 seconds (JVM running for 2.53)
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Starting Test1Application using Java 17.0.4 on DESKTOP-8MHJRII with PID 19184 (C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1\target\classes started by Calder in C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1)
+DEB [THREAD:main] com.example.test1.Test1Application 
+ 		 Running with Spring Boot v2.7.2, Spring v5.3.22
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 No active profile set, falling back to 1 default profile: "default"
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Started Test1Application in 2.294 seconds (JVM running for 2.731)
+INF [THREAD:http-nio-8080-exec-1] com.example.test1.controller.DigitalCurrencyController 
+ 		 Current price of tether is: 1.0005721296547037
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Starting Test1Application using Java 17.0.4 on DESKTOP-8MHJRII with PID 18820 (C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1\target\classes started by Calder in C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1)
+DEB [THREAD:main] com.example.test1.Test1Application 
+ 		 Running with Spring Boot v2.7.2, Spring v5.3.22
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 No active profile set, falling back to 1 default profile: "default"
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Started Test1Application in 2.128 seconds (JVM running for 2.601)
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Starting Test1Application using Java 17.0.4 on DESKTOP-8MHJRII with PID 17100 (C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1\target\classes started by Calder in C:\Users\Calder\Documents\Flatiron\Week8\spring-testing-lab-1)
+DEB [THREAD:main] com.example.test1.Test1Application 
+ 		 Running with Spring Boot v2.7.2, Spring v5.3.22
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 No active profile set, falling back to 1 default profile: "default"
+INF [THREAD:main] com.example.test1.Test1Application 
+ 		 Started Test1Application in 2.153 seconds (JVM running for 2.612)
+INF [THREAD:http-nio-8080-exec-1] com.example.test1.controller.DigitalCurrencyController 
+ 		 Current price of tether is: 1.0005703603319545
+INF [THREAD:http-nio-8080-exec-3] com.example.test1.controller.DigitalCurrencyController 
+ 		 Current price of bitcoin is: 23912.5717901144915693

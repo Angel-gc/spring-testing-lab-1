@@ -25,7 +25,7 @@ public class SecurityConfig {
 //                        .anyRequest().permitAll();
 
         http.authorizeRequests()
-                .antMatchers("/bitcoin")
+                .antMatchers("/{coin}")
                 .authenticated()
                 .and()
                 .formLogin()
